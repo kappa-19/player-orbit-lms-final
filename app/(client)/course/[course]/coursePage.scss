@@ -1,0 +1,190 @@
+@use "@/app/scss/variables.scss" as *;
+
+#course-section {
+  width: 100vw;
+  padding: 13vh 7vw 3vh 7vw;
+  font-family: $fontInterRegular;
+
+  .course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .course-details-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+
+      .course-title-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+
+        .course-icon {
+          svg {
+            width: 3.5rem;
+            height: 3.5rem;
+          }
+        }
+
+        .course-name {
+          font-size: 2.2rem;
+          font-family: $fontInterBold;
+        }
+      }
+
+      .course-info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .course-image {
+          position: relative;
+          width: 44%;
+          height: 23rem;
+          border: 1px solid $borderGray;
+          border-radius: 10px;
+          overflow: hidden;
+
+          img {
+            inset: 0;
+          }
+        }
+
+        .course-description-container {
+          width: 44%;
+          height: 23rem;
+          padding: 2.5rem;
+          border: 1px solid $accentBlue;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .description-body {
+            font-size: 1.8rem;
+            font-family: $fontInterMedium;
+          }
+
+          .author-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: $fontInterMedium;
+
+            .author-name {
+              font-size: 1.4rem;
+            }
+
+            .updated-at {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+
+      .course-details {
+        font-size: 1.5rem;
+        min-height: 9rem;
+      }
+    }
+
+    .chapter-list-container {
+      width: 90%;
+      border: 1px solid $accentBlue;
+      border-radius: 10px;
+      overflow: hidden;
+
+      .chapter-heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        background-color: $accentBlue;
+        padding: 0.5rem;
+
+        .chapter-heading-icon {
+          svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: white;
+          }
+        }
+
+        .chapter-heading-text {
+          font-size: 1.8rem;
+          font-family: $fontInterMedium;
+          color: white;
+        }
+      }
+
+      .chapter-list-main {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        max-height: 15rem;
+        overflow-y: scroll;
+
+        a {
+          text-decoration: none;
+          color: $textBlack;
+
+          .chapter-main {
+            display: flex;
+            flex-direction: row;
+            height: 3.5rem;
+            justify-content: space-between;
+            border: 1px solid $accentBlue;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            font-family: $fontInterMedium;
+            transition: all 0.1s;
+
+            .chapter-number {
+              width: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              border-style: solid;
+              border-color: $accentBlue;
+              border-width: 0 1px 0 0;
+            }
+
+            .chapter-title {
+              width: 90%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 0 0 0 1rem;
+            }
+
+            .chapter-duration {
+              width: 5%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              font-family: $fontInterRegular;
+            }
+          }
+
+          &:hover {
+            .chapter-main {
+              background-color: $accentLightBlue;
+              color: $textBlack;
+
+              .chapter-number {
+                border-color: $accentBlue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

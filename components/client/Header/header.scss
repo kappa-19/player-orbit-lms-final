@@ -1,0 +1,41 @@
+@use "@/app/scss/variables.scss" as *;
+
+header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 10px gray;
+  font-family: $fontInterRegular;
+
+  .project-title {
+
+    a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: rgb(11, 64, 163);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      // &:hover {
+      //   color: blue;
+      // }
+      
+      h1 {
+        font-family: $fontInterMedium;
+
+        span {
+          font-family: $fontInterRegular;
+          color: #5aaefc;
+        } 
+      }
+    }
+  }
+}

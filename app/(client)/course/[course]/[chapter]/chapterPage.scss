@@ -1,0 +1,223 @@
+@use "@/app/scss/variables.scss" as *;
+
+#chapter-section {
+  padding: 13vh 7vw 3vh 7vw;
+  font-family: $fontInterRegular;
+
+  .chapter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .course-title-container {
+      display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+
+      .course-title-icon {
+        svg {
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+      }
+
+      .course-title-text {
+        font-size: 2.2rem;
+        font-family: $fontInterBold;
+      }
+    }
+
+    .chapter-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .chapter-main-content {
+        width: 70%;
+        border: 1px solid $accentBlue;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .chapter-content {
+
+          .chapter-title-container {
+            display: flex;
+            flex-direction: row;
+            background-color: $accentBlue;
+            overflow: hidden;
+            color: white;
+            font-family: $fontInterMedium;
+            font-size: 1.5rem;
+            height: 3.5rem;
+            
+            .chapter-number {
+              width: 5%;
+              border: 1px solid white;
+              border-width: 0 1px 0 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            
+            .chapter-title {
+              width: 90%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 0 0 0 1rem;
+            }
+          }
+
+
+          .chapter-video-container {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .chapter-video {
+              width: 45vw;
+            }
+
+          }
+
+          .chapter-body {
+            padding: 1rem;
+
+            .chapter-body-text {
+              min-height: 9rem;
+              font-size: 1.4rem;
+              font-family: $fontInterMedium;
+            }
+
+            .course-author-container {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+
+              .course-author-name {
+                font-size: 1.3rem
+              }
+
+              .course-publishedAt {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+
+      .chapter-main-list-container {
+        width: 20%;
+        border: 1px solid $accentBlue;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .chapter-main-list-heading {
+          padding: 1rem;
+          background-color: $accentBlue;
+          font-size: 1.5rem;
+          color: white;
+        }
+
+        .chapter-main-list {
+          .current-chapter {
+            text-decoration: none;
+            color: $textBlack;
+            font-size: 1.2rem;
+            font-family: $fontInterMedium;
+
+            .chapter-list-item-container {
+              background-color: $accentLightBlue;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              padding: .5rem;
+              min-height: 5rem;
+
+              .chapter-list-item-icon {
+                width: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                  fill: $textBlack;
+                  width: 2.5rem;
+                  height: 2.5rem;
+                }
+              }
+  
+              .chapter-list-item-title {
+                width: 65%;
+              }
+  
+              .chapter-list-item-duration {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: $fontInterRegular;
+              }
+            }
+
+          }
+
+          .chapter-list-item {
+            text-decoration: none;
+            color: $textBlack;
+            font-size: 1.2rem;
+            font-family: $fontInterMedium;
+            
+            .chapter-list-item-container {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              padding: .5rem;
+              min-height: 5rem;
+              transition: all .1s;
+
+              .chapter-list-item-icon {
+                width: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                  fill: $textBlack;
+                  width: 2.5rem;
+                  height: 2.5rem;
+                }
+              }
+  
+              .chapter-list-item-title {
+                width: 65%;
+              }
+  
+              .chapter-list-item-duration {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: $fontInterRegular;
+              }
+            }
+
+            &:hover {
+              .chapter-list-item-container {
+                background-color: $accentLightBlue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

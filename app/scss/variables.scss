@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("./fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url("./fonts/Inter-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("./fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("./fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+$fontInterRegular: "Inter-Regular", sans-serif;
+$fontInterLight: "Inter-Light", sans-serif;
+$fontInterMedium: "Inter-Medium", sans-serif;
+$fontInterBold: "Inter-Bold", sans-serif;
+
+$bg: #FFF8E7;
+$textBlack: #0D0408;
+$textGray: #262626;
+$borderGray: #afbac4;
+$accentBlue: #3485FF;
+$accentLightBlue: #A9CBF2;
