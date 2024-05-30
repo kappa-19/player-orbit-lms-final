@@ -13,7 +13,6 @@
     "@mux/mux-player-react": "^2.7.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.43.0",
-    "bun-framework-next": "^12.2.5",
     "next": "14.2.3",
     "next-sanity": "^9.3.0",
     "react": "^18",
